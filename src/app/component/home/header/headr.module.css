@@ -1,0 +1,38 @@
+
+#header_home{
+    width: 100%;
+    /* height: 400px; */
+    display: flex;
+    /* align-items: center; */
+    overflow: hidden;
+    justify-content: space-between;
+
+    #aside_header{
+        width: 217px;
+        border-right: 1px solid #8989897e;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .links{
+            transition: all .1s;
+            padding-left: 8px;
+            border-radius: 4px;
+
+
+        }
+
+        .links:hover{
+            background-color: #002c4e1a;
+            
+        }
+    }
+
+    .shoping{
+        width: 100%;
+        height: 100%;
+
+
+    }
+
+}
