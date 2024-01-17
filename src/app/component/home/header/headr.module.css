@@ -1,14 +1,15 @@
 
 #header_home{
-    width: 100%;
-    /* height: 400px; */
     display: flex;
-    /* align-items: center; */
     overflow: hidden;
+    align-items: center;
     justify-content: space-between;
+    /* flex-direction: row; */
+    flex-wrap: nowrap ;
+    gap: 0;
 
     #aside_header{
-        width: 217px;
+        width: 220px;
         border-right: 1px solid #8989897e;
         display: flex;
         flex-direction: column;
@@ -28,11 +29,31 @@
         }
     }
 
-    .shoping{
+    #shoping{
         width: 100%;
         height: 100%;
-
-
+        display: flex;
+        justify-content: end;
+        margin-left: -200px; 
     }
 
 }
+
+
+/* @media screen and (min-width:901px) and (max-width:1150px) {
+    #header_home{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+} */
+
+@media screen and (max-width:1150px) {
+    #header_home{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:900px) {}
+@media screen and (min-width:801px) and (max-width:900px) {}
+@media screen and (min-width:701px) and (max-width:800px) {}
+@media screen and (max-width:700px) {}
